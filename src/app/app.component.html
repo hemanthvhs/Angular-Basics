@@ -1,0 +1,16 @@
+<h3 style="text-align: center">Logging Service</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- <app-new-server (serverDetails)="onServerCreated($event)"></app-new-server> -->
+      <app-new-server></app-new-server>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <app-server-list *ngFor="let vserver of servers;let idx =index" [iserver]="vserver" [id]="idx" (onChangeStatus)="onStatusChange($event)"></app-server-list>
+    </div>
+
+  </div>
+</div>

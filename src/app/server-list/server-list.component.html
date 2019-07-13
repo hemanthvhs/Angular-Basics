@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+  <div class="panel-heading" AppBasicHighlightDirective>{{iserver.serverName}}</div>
+  <div class="panel-body" AppHoverHighlightDirective >{{iserver.serverStatus}}</div>
+  <br>
+  <button class="btn btn-default"  (click)="onStatusChanged('Active')">Set to Active</button>
+  <button class="btn btn-default"  (click)="onStatusChanged('InActive')">Set to InActive</button>
+  <button class="btn btn-default"  (click)="onStatusChanged('Offline')">Set to Offline</button>
+
+</div>
